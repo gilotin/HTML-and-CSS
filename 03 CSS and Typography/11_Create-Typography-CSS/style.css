@@ -1,0 +1,22 @@
+table {
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+table thead {
+    width: 100%;
+    text-align: left;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+
+}
+
+table tbody tr:nth-child(odd){
+    background-color: lightblue;
+}
