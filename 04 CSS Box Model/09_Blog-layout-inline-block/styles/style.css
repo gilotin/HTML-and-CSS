@@ -1,0 +1,42 @@
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgrey;
+    padding: 2rem;
+}
+
+.main {
+    font-size: 18px;
+}
+
+.main section {
+    padding-bottom: 50px;
+}
+
+.main section h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+main ul {
+    margin-left: 30px;
+}
+
+.side {
+    font-size: 16px;
+}
+
+.side h3 {
+    text-indent: 50px;
+}
+
+
+
+img {
+    margin: 20px 0px;
+    width: 420px;
+    height: 280px;
+}
+
