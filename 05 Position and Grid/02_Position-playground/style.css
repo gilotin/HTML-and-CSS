@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+section.card {
+    display: block;
+    position: absolute;
+}
+
+
+first{
+    width: 50px;
+}

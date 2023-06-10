@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: #fff;
+    width: 500px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__description {
+    padding: 40px 30px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.card__btn {
+    border: 1px solid #20c520;
+    padding: 8px 4px;
+    border-radius: 4px;
+    background-color: #19ac19;
+    color: white;
+    text-decoration: none;
+    margin-left: 350px;
+}
+
+.card:hover {
+    width: 512px;
+    
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
+.card:hover a {
+    margin-left: 362px;
+}
