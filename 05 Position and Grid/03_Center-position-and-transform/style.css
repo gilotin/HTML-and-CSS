@@ -1,24 +1,40 @@
 * {
     box-sizing: border-box;
     font-family: Georgia, serif;
-    border-radius: 8px;
 }
 
+
+
 .card {
+    position: relative;
+    top: 15px;
+    left: 15px;
     background-color: #fff;
     width: 500px;
+    border-radius: 8px;
+    border-top-right-radius: 8px ;
+    transition: transform 0.5s;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+
 }
 
 .card__img {
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
+
 .card__description {
-    padding: 40px 30px;
+    padding: 30px ;
+    font-size: 1em;
+    line-height: 1.2;
 }
 
 .card h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 body {
@@ -36,13 +52,9 @@ body {
 }
 
 .card:hover {
-    width: 512px;
-    
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.27);
+    transform: scale(1.05);
 }
 
-.card:hover a {
+/* .card:hover a {
     margin-left: 362px;
-}
+} */
