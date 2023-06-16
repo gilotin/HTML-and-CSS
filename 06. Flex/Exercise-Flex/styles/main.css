@@ -62,9 +62,9 @@ p {
 
 #hero {
     padding: 70px 64px;
-    padding: 70px 64px;
-    margin: auto auto 100px auto;
-    width: 900px;
+    margin: auto;
+
+    max-width: 900px;
     border-bottom: 1px solid #7e8bb68f;
 }
 
@@ -160,39 +160,37 @@ p {
 /* Ready to start */
 
 .ready-to-start {
-    width: 900px;
+    max-width: 900px;
     text-align: center;
     margin: 80px auto;
     border: 1px solid #7e8bb654;
     border-radius: 24px;
     padding: 80px;
     background-color: #0059f7;
-
-  }
+}
 .ready-to-start > p {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #689eff;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #689eff;
 }
 
 .ready-to-start > h2 {
-  font-size: 32px;
-  margin: 25px auto;
+    font-size: 32px;
+    margin: 25px auto;
 }
 
 .ready-to-start > a {
-  display: block;
-  text-decoration: none;
-  border: 1px solid  #689eff;
-  background-color: #689eff;
-  border-radius: 6px;
-  padding: 12px 8px;
-  color: white;
-  font-size: 14px;
-  margin: auto;
-  width: 140px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #689eff;
+    background-color: #689eff;
+    border-radius: 6px;
+    padding: 12px 8px;
+    color: white;
+    font-size: 14px;
+    margin: auto;
+    width: 140px;
 }
-
 
 /* How section */
 
@@ -239,4 +237,67 @@ p {
 
 #how .row .description {
     font-size: 14px;
+}
+
+@media screen and (max-width: 765px) {
+    #hero {
+        padding: 70px 64px;
+        border-bottom: 1px solid #7e8bb68f;
+    }
+
+    #hero .welcome {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    #hero .welcome .tile {
+        width: 100%;
+    }
+    #hero .welcome > div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    #features .feat-info {
+        text-align: center;
+    }
+
+    #features .feat-info.description {
+        width: 50%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    /* How section */
+
+    #how .row {
+        gap: 18px;
+    }
+    #how .section-title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+
+    #how .row:not(:last-child) {
+        margin-bottom: 36px;
+    }
+
+    #how .row .row-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #features .feat-card {
+        height: auto;
+    }
+
+    #how .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
